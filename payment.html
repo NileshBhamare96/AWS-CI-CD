@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #e8f5e9; /* Fresh light green background */
+      color: #2e7d32; /* Dark green for text */
+    }
+    header {
+      background: linear-gradient(to right, #00b894, #00cec9);
+      padding: 50px 20px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 3.5em;
+      margin: 0;
+      animation: fadeInDown 1s ease;
+    }
+    header p {
+      font-size: 1.5em;
+      margin-top: 10px;
+      animation: fadeInUp 1s ease;
+    }
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-20px);}
+      100% { opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px);}
+      100% { opacity: 1; transform: translateY(0);}
+    }
+    .payment-container {
+      max-width: 700px;
+      margin: 50px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .payment-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .payment-header h2 {
+      font-size: 2.5em;
+      color: #00b894;
+    }
+    .payment-form input {
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1em;
+      color: #333;
+    }
+    .payment-form input:focus {
+      border-color: #00b894;
+      outline: none;
+    }
+    .payment-form button {
+      width: 100%;
+      padding: 15px;
+      background-color: #00b894;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+    }
+    .payment-form button:hover {
+      background-color: #ffd600;
+      color: #00695c;
+    }
+    footer {
+      background: #00695c;
+      padding: 20px;
+      text-align: center;
+      color: #d0f8ce;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Complete Your Payment</h1>
+  <p>Secure and easy payment process</p>
+</header>
+
+<div class="payment-container">
+  <div class="payment-header">
+    <h2>Payment Information</h2>
+    <p>Fill in your details below to complete the enrollment.</p>
+  </div>
+
+  <div class="payment-form">
+    <input type="text" placeholder="Cardholder's Name" required>
+    <input type="text" placeholder="Credit Card Number" required>
+    <input type="text" placeholder="Expiration Date (MM/YY)" required>
+    <input type="text" placeholder="CVV" required>
+    <button type="submit">Proceed to Payment</button>
+  </div>
+</div>
+
+<footer>
+  © 2025 Nilesh Bhamare's IT World | Crafted with passion by Nilesh Bhamare 🌱
+</footer>
+
+</body>
+</html>
